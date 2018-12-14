@@ -11,7 +11,7 @@ public int[] getMaxWindow(int[] arr,int w){
   }
   qmax.addLast(i);
   if (qmax.peekFirst()==i-w){
-  qmax.poolFirst();
+  qmax.pollFirst();
   }
   if (i>=w-1){
   res[index++]=arr[qmax.peekFirst()];
